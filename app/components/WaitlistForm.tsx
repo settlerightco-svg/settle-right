@@ -77,35 +77,36 @@ export default function WaitlistForm() {
     <form
       id="early-access"
       onSubmit={handleSubmit}
-      className="space-y-6"
+      className="space-y-5"
     >
       <div className="space-y-3">
-        <p className="text-sm font-semibold uppercase tracking-[0.2em] text-secondary">Early Access</p>
-        <h2 className="text-3xl font-semibold text-primary-container sm:text-4xl">Get Early Access</h2>
-        <p className="max-w-2xl text-body-md text-on-surface-variant">
-          Join the waitlist and be first to access SettleRight when we launch. Share your move plan and we’ll keep you in the loop.
+        <h2 className="text-[26px] font-semibold tracking-[-0.01em] text-[#071c31]">
+          Join the waitlist
+        </h2>
+        <p className="text-[18px] leading-relaxed text-[#53647d]">
+          Share your relocation plan and we’ll keep you first in line.
         </p>
       </div>
 
       <div className="grid gap-4 sm:grid-cols-2">
         <label className="space-y-2">
-          <span className="text-sm font-medium text-on-surface">Name</span>
+          <span className="text-sm font-semibold text-[#071c31]">Name</span>
           <input
             value={name}
             onChange={(event) => setName(event.target.value)}
             required
-            className="w-full rounded-2xl border border-surface-variant bg-surface-container-low px-4 py-3 text-sm text-on-surface outline-none transition focus:border-secondary focus:bg-white"
+            className="w-full rounded-xl border border-[#dbe2ea] bg-[#f6f8fb] px-4 py-3 text-sm text-[#071c31] outline-none transition focus:border-[#071c31] focus:bg-white"
             placeholder="Enter your full name"
           />
         </label>
         <label className="space-y-2">
-          <span className="text-sm font-medium text-on-surface">Email Address</span>
+          <span className="text-sm font-semibold text-[#071c31]">Email Address</span>
           <input
             value={email}
             onChange={(event) => setEmail(event.target.value)}
             type="email"
             required
-            className="w-full rounded-2xl border border-surface-variant bg-surface-container-low px-4 py-3 text-sm text-on-surface outline-none transition focus:border-secondary focus:bg-white"
+            className="w-full rounded-xl border border-[#dbe2ea] bg-[#f6f8fb] px-4 py-3 text-sm text-[#071c31] outline-none transition focus:border-[#071c31] focus:bg-white"
             placeholder="you@example.com"
           />
         </label>
@@ -113,12 +114,12 @@ export default function WaitlistForm() {
 
       <div className="grid gap-4 sm:grid-cols-2">
         <label className="space-y-2">
-          <span className="text-sm font-medium text-on-surface">Current Country</span>
+          <span className="text-sm font-semibold text-[#071c31]">Current Country</span>
           <select
             value={country}
             onChange={(event) => setCountry(event.target.value)}
             required
-            className="w-full rounded-2xl border border-surface-variant bg-surface-container-low px-4 py-3 text-sm text-on-surface outline-none transition focus:border-secondary focus:bg-white"
+            className="w-full rounded-xl border border-[#dbe2ea] bg-[#f6f8fb] px-4 py-3 text-sm text-[#071c31] outline-none transition focus:border-[#071c31] focus:bg-white"
           >
             <option value="">Select your country</option>
             {countries.map((item) => (
@@ -129,12 +130,12 @@ export default function WaitlistForm() {
           </select>
         </label>
         <label className="space-y-2">
-          <span className="text-sm font-medium text-on-surface">Planning to Move To</span>
+          <span className="text-sm font-semibold text-[#071c31]">Planning to Move To</span>
           <select
             value={emirate}
             onChange={(event) => setEmirate(event.target.value)}
             required
-            className="w-full rounded-2xl border border-surface-variant bg-surface-container-low px-4 py-3 text-sm text-on-surface outline-none transition focus:border-secondary focus:bg-white"
+            className="w-full rounded-xl border border-[#dbe2ea] bg-[#f6f8fb] px-4 py-3 text-sm text-[#071c31] outline-none transition focus:border-[#071c31] focus:bg-white"
           >
             <option value="">Select an emirate</option>
             {emirates.map((item) => (
@@ -147,22 +148,22 @@ export default function WaitlistForm() {
       </div>
 
       <label className="space-y-2">
-        <span className="text-sm font-medium text-on-surface">Reason to Move</span>
+        <span className="text-sm font-semibold text-[#071c31]">Reason to Move</span>
         <textarea
           value={reason}
           onChange={(event) => setReason(event.target.value)}
-          rows={4}
-          className="w-full rounded-3xl border border-surface-variant bg-surface-container-low px-4 py-3 text-sm text-on-surface outline-none transition focus:border-secondary focus:bg-white"
+          rows={3}
+          className="w-full rounded-xl border border-[#dbe2ea] bg-[#f6f8fb] px-4 py-3 text-sm text-[#071c31] outline-none transition focus:border-[#071c31] focus:bg-white"
           placeholder="Tell us a bit about your plans or goals."
         />
       </label>
 
-      <label className="inline-flex items-center gap-3 rounded-3xl border border-surface-variant bg-surface-container-low px-4 py-4 text-sm text-on-surface transition focus-within:border-secondary focus-within:bg-white">
+      <label className="inline-flex items-center gap-3 rounded-xl border border-[#dbe2ea] bg-[#f6f8fb] px-4 py-3 text-sm text-[#071c31] transition focus-within:border-[#071c31] focus-within:bg-white">
         <input
           type="checkbox"
           checked={subscribe}
           onChange={(event) => setSubscribe(event.target.checked)}
-          className="h-5 w-5 rounded-md border border-surface-variant text-secondary focus:ring-secondary"
+          className="h-5 w-5 rounded-md border border-[#dbe2ea] text-[#071c31] focus:ring-[#071c31]"
         />
         <span>Subscribe for Early Access</span>
       </label>
@@ -182,7 +183,7 @@ export default function WaitlistForm() {
       <button
         type="submit"
         disabled={status === "loading"}
-        className="inline-flex w-full items-center justify-center rounded-3xl bg-[#071c31] px-6 py-4 text-sm font-semibold text-white transition hover:bg-[#0b2548] disabled:cursor-not-allowed disabled:opacity-60"
+        className="inline-flex w-full items-center justify-center rounded-xl bg-[#071c31] px-6 py-4 text-base font-semibold text-white transition hover:bg-[#0b2548] disabled:cursor-not-allowed disabled:opacity-60"
       >
         {status === "loading" ? "Submitting..." : "Join Waitlist"}
       </button>

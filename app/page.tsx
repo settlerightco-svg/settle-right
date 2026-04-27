@@ -1,30 +1,34 @@
+import WaitlistForm from "@/app/components/WaitlistForm";
+
 export default function Home() {
   return (
-    <div className="bg-[#F7F8FA] font-manrope text-on-surface antialiased scroll-smooth">
-      <header className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-xl border-b border-[#071A2F]/5 shadow-[0_4px_20px_rgba(7,26,47,0.08)]">
-        <nav className="flex justify-between items-center h-20 px-6 md:px-20 max-w-[1440px] mx-auto">
-          <div className="text-2xl font-extrabold text-[#071A2F]">SettleRight</div>
+    <div className="min-h-screen bg-[#f6f8fb] font-manrope text-[#071c31] antialiased scroll-smooth">
+      <header className="sticky top-0 z-50 w-full border-b border-[#071c31]/5 bg-white shadow-[0_10px_32px_rgba(7,28,49,0.06)]">
+        <nav className="mx-auto flex h-[104px] max-w-[1440px] items-center px-8 md:px-20">
+          <div className="text-[28px] font-extrabold tracking-[-0.02em] text-[#071c31]">
+            SettleRight
+          </div>
         </nav>
       </header>
 
       <main>
-        <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
-          <div className="relative z-10 max-w-[1440px] mx-auto px-6 md:px-20">
-            <div className="max-w-3xl space-y-8">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white text-[#071A2F] text-xs font-bold uppercase w-fit shadow">
+        <section className="flex min-h-[calc(100vh-104px)] items-center bg-[#f6f8fb] px-8 py-24 md:px-20">
+          <div className="mx-auto w-full max-w-[900px]">
+            <div className="space-y-9">
+              <div className="inline-flex rounded-full bg-white px-6 py-3 text-[13px] font-extrabold uppercase tracking-[0.03em] text-[#071c31] shadow-[0_2px_8px_rgba(7,28,49,0.14)] ring-1 ring-[#071c31]/5">
                 Coming Soon
               </div>
 
-              <h1 className="text-5xl lg:text-6xl font-bold text-[#071A2F] leading-tight">
+              <h1 className="max-w-[830px] text-[56px] font-extrabold leading-[1.16] tracking-[-0.025em] text-[#071c31] md:text-[76px]">
                 Your AI-powered relocation assistant for moving to the UAE.
               </h1>
 
-              <p className="text-lg text-slate-600 leading-relaxed">
+              <p className="max-w-[820px] text-[22px] leading-[1.55] text-[#53647d]">
                 Moving to the UAE can feel overwhelming — visas, documents, residency steps, banking, and setup. SettleRight helps you understand what to do, when to do it, and what comes next.
               </p>
 
               <a
-                className="inline-flex px-8 py-4 bg-[#071A2F] text-white font-semibold rounded-lg"
+                className="inline-flex min-w-[350px] items-center justify-center rounded-lg bg-[#071c31] px-8 py-5 text-[20px] font-semibold text-white shadow-sm transition hover:bg-[#0b2947] sm:min-w-[420px]"
                 href="#early-access"
               >
                 Subscribe now to get early access
@@ -33,61 +37,72 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="py-32 bg-white">
-          <div className="max-w-[1440px] mx-auto px-6 md:px-20">
-            <h2 className="text-4xl font-semibold text-[#071A2F]">
+        <section className="bg-white px-8 py-32 md:px-20">
+          <div className="mx-auto max-w-[1440px]">
+            <h2 className="max-w-[1040px] text-[46px] font-semibold leading-tight tracking-[-0.02em] text-[#071c31] md:text-[54px]">
               Simplifying the high-stakes journey of relocation
             </h2>
-            <p className="mt-6 text-lg text-slate-600 max-w-3xl">
+            <p className="mt-8 max-w-[1120px] text-[24px] leading-relaxed text-[#53647d]">
               SettleRight is being built to make relocation to the UAE simpler, clearer, and less stressful.
             </p>
           </div>
         </section>
 
-        <section className="py-32 px-6 md:px-20 max-w-[1440px] mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-white p-8 rounded-2xl shadow">
-              <h3 className="text-2xl font-semibold text-[#071A2F]">Visa Roadmap</h3>
-              <p className="mt-3 text-slate-600">Step-by-step visa and residency guidance.</p>
+        <section className="bg-[#f6f8fb] px-8 pb-36 pt-40 md:px-20">
+          <div className="mx-auto grid max-w-[1440px] grid-cols-1 gap-8 md:grid-cols-3">
+            <div className="rounded-2xl bg-white p-10 shadow-[0_2px_8px_rgba(7,28,49,0.12)] ring-1 ring-[#071c31]/5">
+              <h3 className="text-[30px] font-semibold tracking-[-0.01em] text-[#071c31]">
+                Visa Roadmap
+              </h3>
+              <p className="mt-5 text-[20px] leading-relaxed text-[#53647d]">
+                Step-by-step visa and residency guidance.
+              </p>
             </div>
 
-            <div className="bg-white p-8 rounded-2xl shadow">
-              <h3 className="text-2xl font-semibold text-[#071A2F]">Financial Setup</h3>
-              <p className="mt-3 text-slate-600">Banking and setup support for UAE movers.</p>
+            <div className="rounded-2xl bg-white p-10 shadow-[0_2px_8px_rgba(7,28,49,0.12)] ring-1 ring-[#071c31]/5">
+              <h3 className="text-[30px] font-semibold tracking-[-0.01em] text-[#071c31]">
+                Financial Setup
+              </h3>
+              <p className="mt-5 text-[20px] leading-relaxed text-[#53647d]">
+                Banking and setup support for UAE movers.
+              </p>
             </div>
 
-            <div className="bg-white p-8 rounded-2xl shadow">
-              <h3 className="text-2xl font-semibold text-[#071A2F]">Settling In</h3>
-              <p className="mt-3 text-slate-600">Housing, utilities, and relocation essentials.</p>
+            <div className="rounded-2xl bg-white p-10 shadow-[0_2px_8px_rgba(7,28,49,0.12)] ring-1 ring-[#071c31]/5">
+              <h3 className="text-[30px] font-semibold tracking-[-0.01em] text-[#071c31]">
+                Settling In
+              </h3>
+              <p className="mt-5 text-[20px] leading-relaxed text-[#53647d]">
+                Housing, utilities, and relocation essentials.
+              </p>
             </div>
           </div>
         </section>
 
-        <section className="py-32 bg-[#071A2F] text-white" id="early-access">
-          <div className="max-w-[1440px] mx-auto px-6 md:px-20 grid grid-cols-1 lg:grid-cols-2 gap-16">
-            <div className="space-y-8">
-              <div className="inline-block px-4 py-1 rounded-full bg-white text-[#071A2F] text-xs font-bold uppercase">
+        <section className="bg-[#071c31] px-8 py-36 text-white md:px-20" id="early-access">
+          <div className="mx-auto grid max-w-[1440px] grid-cols-1 items-center gap-16 lg:grid-cols-[1fr_1.15fr]">
+            <div className="space-y-9">
+              <div className="inline-flex rounded-full bg-white px-6 py-2 text-[13px] font-extrabold uppercase tracking-[0.03em] text-[#071c31]">
                 Coming Soon
               </div>
-              <h2 className="text-5xl lg:text-6xl font-bold">
+              <h2 className="max-w-[680px] text-[56px] font-extrabold leading-[1.05] tracking-[-0.025em] text-white md:text-[72px]">
                 Be among the first to experience SettleRight.
               </h2>
-              <p className="text-lg text-slate-300">
+              <p className="max-w-[620px] text-[24px] leading-relaxed text-white/70">
                 Subscribe now to get early access and be the first to know when we launch.
               </p>
             </div>
 
-            <div className="bg-white rounded-2xl p-8 text-[#071A2F] shadow-2xl">
-              <p className="text-lg font-semibold">Join the waitlist</p>
-              <p className="mt-2 text-slate-600">Form coming soon.</p>
+            <div className="min-h-[420px] rounded-2xl bg-white p-10 text-[#071c31] shadow-[0_24px_80px_rgba(0,0,0,0.18)]">
+              <WaitlistForm />
             </div>
           </div>
         </section>
       </main>
 
-      <footer className="bg-[#F7F8FA] w-full py-16 border-t border-[#071A2F]/5">
-        <div className="px-8 md:px-20 max-w-[1440px] mx-auto text-center">
-          <p className="font-manrope text-xs text-slate-400 uppercase">
+      <footer className="w-full bg-[#f6f8fb] py-20">
+        <div className="mx-auto max-w-[1440px] px-8 text-center md:px-20">
+          <p className="text-[14px] uppercase text-[#8ea0b9]">
             © 2026 SettleRight. All rights reserved.
           </p>
         </div>
