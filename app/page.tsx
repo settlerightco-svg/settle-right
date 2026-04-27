@@ -79,11 +79,6 @@ export default function Home() {
       traditional: "Hours disappear across tabs, service providers, and repeated research.",
       settleRight: "One structured workflow keeps decisions, documents, and tasks moving together.",
     },
-    {
-      title: "Lack of trust",
-      traditional: "It is hard to know which provider, checklist, or advice is reliable.",
-      settleRight: "Verified guidance and support give you confidence before taking action.",
-    },
   ];
 
   return (
@@ -168,7 +163,7 @@ export default function Home() {
               <div className="mt-12 grid gap-10 lg:grid-cols-[0.85fr_1fr] lg:items-start">
                 <div>
                   <h2 className="max-w-[620px] text-[34px] font-bold leading-[1.12] tracking-[-0.025em] text-[#071c31] md:text-[44px]">
-                    A premium relocation assistant for the UAE
+                    A hassle-free relocation assistant for the UAE
                   </h2>
                   <p className="copy-justified mt-8 max-w-[660px] text-[18px] leading-[1.75] text-[#6a7280]">
                     SettleRight is building an AI-powered platform to simplify relocation to the UAE.
