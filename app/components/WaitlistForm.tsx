@@ -80,10 +80,10 @@ export default function WaitlistForm() {
       className="space-y-5"
     >
       <div className="space-y-3">
-        <h2 className="text-[26px] font-semibold tracking-[-0.01em] text-[#071c31]">
+        <h2 className="text-[24px] font-semibold tracking-[-0.01em] text-[#071c31] md:text-[26px]">
           Join the waitlist
         </h2>
-        <p className="text-[18px] leading-relaxed text-[#53647d]">
+        <p className="text-[16px] leading-relaxed text-[#53647d] md:text-[18px]">
           Share your relocation plan and we’ll keep you first in line.
         </p>
       </div>
@@ -95,7 +95,7 @@ export default function WaitlistForm() {
             value={name}
             onChange={(event) => setName(event.target.value)}
             required
-            className="w-full rounded-xl border border-[#dbe2ea] bg-[#f6f8fb] px-4 py-3 text-sm text-[#071c31] outline-none transition focus:border-[#071c31] focus:bg-white"
+            className="w-full rounded-xl border border-[#dbe2ea] bg-[#f6f8fb] px-4 py-3 text-[16px] text-[#071c31] outline-none transition focus:border-[#071c31] focus:bg-white"
             placeholder="Enter your full name"
           />
         </label>
@@ -106,7 +106,7 @@ export default function WaitlistForm() {
             onChange={(event) => setEmail(event.target.value)}
             type="email"
             required
-            className="w-full rounded-xl border border-[#dbe2ea] bg-[#f6f8fb] px-4 py-3 text-sm text-[#071c31] outline-none transition focus:border-[#071c31] focus:bg-white"
+            className="w-full rounded-xl border border-[#dbe2ea] bg-[#f6f8fb] px-4 py-3 text-[16px] text-[#071c31] outline-none transition focus:border-[#071c31] focus:bg-white"
             placeholder="you@example.com"
           />
         </label>
@@ -119,7 +119,7 @@ export default function WaitlistForm() {
             value={country}
             onChange={(event) => setCountry(event.target.value)}
             required
-            className="w-full rounded-xl border border-[#dbe2ea] bg-[#f6f8fb] px-4 py-3 text-sm text-[#071c31] outline-none transition focus:border-[#071c31] focus:bg-white"
+            className="w-full rounded-xl border border-[#dbe2ea] bg-[#f6f8fb] px-4 py-3 text-[16px] text-[#071c31] outline-none transition focus:border-[#071c31] focus:bg-white"
           >
             <option value="">Select your country</option>
             {countries.map((item) => (
@@ -135,7 +135,7 @@ export default function WaitlistForm() {
             value={emirate}
             onChange={(event) => setEmirate(event.target.value)}
             required
-            className="w-full rounded-xl border border-[#dbe2ea] bg-[#f6f8fb] px-4 py-3 text-sm text-[#071c31] outline-none transition focus:border-[#071c31] focus:bg-white"
+            className="w-full rounded-xl border border-[#dbe2ea] bg-[#f6f8fb] px-4 py-3 text-[16px] text-[#071c31] outline-none transition focus:border-[#071c31] focus:bg-white"
           >
             <option value="">Select an emirate</option>
             {emirates.map((item) => (
@@ -153,7 +153,7 @@ export default function WaitlistForm() {
           value={reason}
           onChange={(event) => setReason(event.target.value)}
           rows={3}
-          className="w-full rounded-xl border border-[#dbe2ea] bg-[#f6f8fb] px-4 py-3 text-sm text-[#071c31] outline-none transition focus:border-[#071c31] focus:bg-white"
+          className="w-full rounded-xl border border-[#dbe2ea] bg-[#f6f8fb] px-4 py-3 text-[16px] text-[#071c31] outline-none transition focus:border-[#071c31] focus:bg-white"
           placeholder="Tell us a bit about your plans or goals."
         />
       </label>
