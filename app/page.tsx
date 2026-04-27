@@ -131,8 +131,8 @@ export default function Home() {
             </div>
 
             <aside className="rounded-[28px] bg-white p-8 shadow-[0_28px_90px_rgba(7,28,49,0.12)] ring-1 ring-[#071c31]/8 md:p-10 lg:p-12">
-              <p className="text-[13px] font-extrabold uppercase tracking-[0.34em] text-[#8a6400]">
-                Why SettleRight
+              <p className="text-[13px] font-extrabold text-[#8a6400]">
+                Why SettleRight?
               </p>
               <h2 className="mt-7 max-w-[430px] text-[32px] font-bold leading-[1.1] tracking-[-0.025em] text-[#071c31] md:text-[38px]">
                 Relocation planning, distilled.
