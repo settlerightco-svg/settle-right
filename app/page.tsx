@@ -39,17 +39,72 @@ export default function Home() {
 
         <section className="bg-white px-8 py-32 md:px-20">
           <div className="mx-auto max-w-[1440px]">
-            <h2 className="max-w-[1040px] text-[46px] font-semibold leading-tight tracking-[-0.02em] text-[#071c31] md:text-[54px]">
-              Simplifying the high-stakes journey of relocation
+            <div className="inline-flex rounded-full bg-[#f6f8fb] px-6 py-3 text-[13px] font-extrabold uppercase tracking-[0.03em] text-[#071c31] shadow-[0_2px_8px_rgba(7,28,49,0.08)] ring-1 ring-[#071c31]/5">
+              What is SettleRight?
+            </div>
+            <h2 className="mt-12 max-w-[1040px] text-[46px] font-semibold leading-tight tracking-[-0.02em] text-[#071c31] md:text-[54px]">
+              Simplifying the high-stakes journey of relocation.
             </h2>
-            <p className="mt-8 max-w-[1120px] text-[24px] leading-relaxed text-[#53647d]">
-              SettleRight is being built to make relocation to the UAE simpler, clearer, and less stressful.
-            </p>
+            <div className="mt-8 max-w-[1120px] space-y-6 text-[24px] leading-relaxed text-[#53647d]">
+              <p>
+                SettleRight is building an AI-powered platform to simplify relocation to the UAE.
+                From visas and medical tests to banking and housing, every step of the relocation
+                journey is brought into one clear experience.
+              </p>
+              <p>
+                Whether you are a remote worker, founder, or moving with family, SettleRight helps
+                remove uncertainty, reduce friction, and make relocation predictable.
+              </p>
+            </div>
           </div>
         </section>
 
-        <section className="bg-[#f6f8fb] px-8 pb-36 pt-40 md:px-20">
-          <div className="mx-auto grid max-w-[1440px] grid-cols-1 gap-8 md:grid-cols-3">
+        <section className="bg-[#f6f8fb] px-8 py-32 md:px-20">
+          <div className="mx-auto max-w-[1440px]">
+            <div className="inline-flex rounded-full bg-white px-6 py-3 text-[13px] font-extrabold uppercase tracking-[0.03em] text-[#071c31] shadow-[0_2px_8px_rgba(7,28,49,0.1)] ring-1 ring-[#071c31]/5">
+              Why SettleRight?
+            </div>
+            <h2 className="mt-12 max-w-[980px] text-[46px] font-semibold leading-tight tracking-[-0.02em] text-[#071c31] md:text-[54px]">
+              A calmer way to understand every move before you make it.
+            </h2>
+            <div className="mt-20 grid grid-cols-1 gap-8 md:grid-cols-3">
+              <div className="rounded-2xl bg-white p-10 shadow-[0_2px_8px_rgba(7,28,49,0.12)] ring-1 ring-[#071c31]/5">
+                <h3 className="text-[30px] font-semibold tracking-[-0.01em] text-[#071c31]">
+                  Clear cost breakdowns
+                </h3>
+                <p className="mt-5 text-[20px] leading-relaxed text-[#53647d]">
+                  Know what to budget for visas, residency, setup, and everyday relocation costs.
+                </p>
+              </div>
+
+              <div className="rounded-2xl bg-white p-10 shadow-[0_2px_8px_rgba(7,28,49,0.12)] ring-1 ring-[#071c31]/5">
+                <h3 className="text-[30px] font-semibold tracking-[-0.01em] text-[#071c31]">
+                  Step-by-step guidance
+                </h3>
+                <p className="mt-5 text-[20px] leading-relaxed text-[#53647d]">
+                  Replace scattered websites and guesswork with a guided path from planning to arrival.
+                </p>
+              </div>
+
+              <div className="rounded-2xl bg-white p-10 shadow-[0_2px_8px_rgba(7,28,49,0.12)] ring-1 ring-[#071c31]/5">
+                <h3 className="text-[30px] font-semibold tracking-[-0.01em] text-[#071c31]">
+                  Real-time support
+                </h3>
+                <p className="mt-5 text-[20px] leading-relaxed text-[#53647d]">
+                  Get AI-powered help for documents, next steps, providers, and local setup questions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-[#f6f8fb] px-8 pb-36 pt-8 md:px-20">
+          <div className="mx-auto max-w-[1440px]">
+            <h2 className="max-w-[980px] text-[46px] font-semibold leading-tight tracking-[-0.02em] text-[#071c31] md:text-[54px]">
+              Built around the relocation moments that matter.
+            </h2>
+          </div>
+          <div className="mx-auto mt-20 grid max-w-[1440px] grid-cols-1 gap-8 md:grid-cols-3">
             <div className="rounded-2xl bg-white p-10 shadow-[0_2px_8px_rgba(7,28,49,0.12)] ring-1 ring-[#071c31]/5">
               <h3 className="text-[30px] font-semibold tracking-[-0.01em] text-[#071c31]">
                 Visa Roadmap
