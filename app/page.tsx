@@ -93,11 +93,10 @@ export default function Home() {
           <div className="text-[28px] font-extrabold tracking-[-0.02em] text-[#071c31]">
             SettleRight
           </div>
-          <div className="hidden items-center rounded-full bg-[#f8fafc] px-2 py-2 text-[16px] text-[#53647d] shadow-sm ring-1 ring-[#071c31]/6 md:flex">
-            <span className="rounded-full bg-[#fff8ea] px-5 py-3 text-[#785a00]">
-              UAE Relocation
-            </span>
-            <span className="px-5">AI-guided planning</span>
+          <div className="hidden items-center gap-4 rounded-full bg-[#f8fafc] px-6 py-4 text-[16px] text-[#53647d] shadow-sm ring-1 ring-[#071c31]/6 md:flex">
+            <span className="font-medium text-[#785a00]">UAE Relocation</span>
+            <span className="h-1.5 w-1.5 rounded-full bg-[#c8d0db]" aria-hidden="true" />
+            <span>AI-guided planning</span>
           </div>
         </nav>
       </header>
