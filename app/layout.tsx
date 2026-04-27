@@ -1,19 +1,26 @@
-import type { ReactNode } from "react";
+import type { Metadata } from "next";
+import { Manrope } from "next/font/google";
 import "./globals.css";
 
-export const metadata = {
-  title: "SettleRight",
-  description: "AI-powered relocation assistant",
+const manrope = Manrope({
+  subsets: ["latin"],
+  variable: "--font-manrope",
+  display: "swap",
+});
+
+export const metadata: Metadata = {
+  title: "SettleRight — AI-powered UAE relocation",
+  description: "SettleRight is a premium landing page for AI-guided relocation to the UAE.",
 };
 
 export default function RootLayout({
   children,
-}: {
-  children: ReactNode;
-}) {
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="en" className={`${manrope.variable} h-full antialiased`}>
+      <body className="min-h-full bg-[#f8f9fb] text-[#191c1e]">{children}</body>
     </html>
   );
 }
