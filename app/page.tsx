@@ -97,9 +97,6 @@ export default function Home() {
                 >
                   Subscribe for early access
                 </a>
-                <div className="inline-flex min-h-[64px] items-center justify-center rounded-[22px] bg-white px-8 text-center text-[17px] text-[#6a7280] shadow-[0_2px_8px_rgba(7,28,49,0.12)] ring-1 ring-[#071c31]/5 sm:min-w-[360px]">
-                  Scroll down to fill the early access form below.
-                </div>
               </div>
             </div>
 
