@@ -52,6 +52,38 @@ export default function Home() {
       title: "Settling In",
       text: "Housing, utilities, and relocation essentials.",
     },
+    {
+      title: "24x7 Assistance",
+      text: "Always-on guidance whenever questions come up before, during, or after your move.",
+    },
+  ];
+
+  const workflowItems = [
+    {
+      title: "Transparency",
+      traditional: "Scattered information, unclear next steps, and no single source of truth.",
+      settleRight: "A clear relocation roadmap with every milestone visible from day one.",
+    },
+    {
+      title: "Cost clarity",
+      traditional: "Unexpected fees appear late, making budgets difficult to trust.",
+      settleRight: "Estimated costs are organized early so you know what to prepare for.",
+    },
+    {
+      title: "Legal issues",
+      traditional: "Visa, residency, and documentation rules are easy to misunderstand.",
+      settleRight: "Guided prompts help you understand requirements before they become blockers.",
+    },
+    {
+      title: "Time consuming",
+      traditional: "Hours disappear across tabs, service providers, and repeated research.",
+      settleRight: "One structured workflow keeps decisions, documents, and tasks moving together.",
+    },
+    {
+      title: "Lack of trust",
+      traditional: "It is hard to know which provider, checklist, or advice is reliable.",
+      settleRight: "Verified guidance and support give you confidence before taking action.",
+    },
   ];
 
   return (
@@ -61,11 +93,11 @@ export default function Home() {
           <div className="text-[28px] font-extrabold tracking-[-0.02em] text-[#071c31]">
             SettleRight
           </div>
-          <div className="hidden items-center gap-5 text-[16px] text-[#53647d] md:flex">
+          <div className="hidden items-center rounded-full bg-[#f8fafc] px-2 py-2 text-[16px] text-[#53647d] shadow-sm ring-1 ring-[#071c31]/6 md:flex">
             <span className="rounded-full bg-[#fff8ea] px-5 py-3 text-[#785a00]">
               UAE Relocation
             </span>
-            <span>AI-guided planning</span>
+            <span className="px-5">AI-guided planning</span>
           </div>
         </nav>
       </header>
@@ -74,17 +106,12 @@ export default function Home() {
         <section className="bg-[#f6f8fb] px-7 py-16 md:px-20 md:py-28">
           <div className="mx-auto grid max-w-[1440px] items-center gap-14 lg:grid-cols-[1.35fr_0.9fr]">
             <div className="space-y-8">
-              <div className="inline-flex items-center gap-3 rounded-full bg-[#fff8ea] px-5 py-3 text-[12px] font-extrabold uppercase tracking-[0.32em] text-[#785a00] shadow-sm">
-                <span className="h-2.5 w-2.5 rounded-full bg-[#8a6400]" />
-                Coming Soon
-              </div>
-
               <div className="space-y-6">
                 <h1 className="max-w-[850px] text-[48px] font-extrabold leading-[1.08] tracking-[-0.035em] text-[#071c31] md:text-[76px] lg:text-[82px]">
                   Your AI-powered relocation assistant to the UAE
                 </h1>
 
-                <p className="max-w-[820px] text-[22px] leading-[1.55] text-[#4f5d72] md:text-[24px]">
+                <p className="copy-justified max-w-[820px] text-[22px] leading-[1.55] text-[#4f5d72] md:text-[24px]">
                   SettleRight simplifies visas, banking, housing, and compliance so you can move
                   with confidence. Start your UAE relocation with one elegant, guided experience.
                 </p>
@@ -98,6 +125,10 @@ export default function Home() {
                   Subscribe for early access
                 </a>
               </div>
+              <div className="inline-flex items-center gap-3 rounded-full bg-[#fff8ea] px-5 py-3 text-[12px] font-extrabold uppercase tracking-[0.32em] text-[#785a00] shadow-sm">
+                <span className="h-2.5 w-2.5 rounded-full bg-[#8a6400]" />
+                Coming Soon
+              </div>
             </div>
 
             <aside className="rounded-[28px] bg-white p-8 shadow-[0_28px_90px_rgba(7,28,49,0.12)] ring-1 ring-[#071c31]/8 md:p-10 lg:p-12">
@@ -107,7 +138,7 @@ export default function Home() {
               <h2 className="mt-7 max-w-[430px] text-[36px] font-bold leading-[1.1] tracking-[-0.025em] text-[#071c31] md:text-[42px]">
                 Relocation planning, distilled.
               </h2>
-              <p className="mt-6 max-w-[520px] text-[19px] leading-relaxed text-[#6a7280]">
+              <p className="copy-justified mt-6 max-w-[520px] text-[19px] leading-relaxed text-[#6a7280]">
                 The easiest way to understand what comes next for UAE relocation, whether you are
                 moving for work, entrepreneurship, or lifestyle.
               </p>
@@ -119,7 +150,7 @@ export default function Home() {
                     key={item.title}
                   >
                     <h3 className="text-[17px] font-bold text-[#071c31]">{item.title}</h3>
-                    <p className="mt-4 text-[16px] leading-relaxed text-[#6a7280]">
+                    <p className="copy-justified mt-4 text-[16px] leading-relaxed text-[#6a7280]">
                       {item.text}
                     </p>
                   </div>
@@ -140,7 +171,7 @@ export default function Home() {
                   <h2 className="max-w-[620px] text-[38px] font-bold leading-[1.12] tracking-[-0.025em] text-[#071c31] md:text-[52px]">
                     A premium relocation assistant for the UAE
                   </h2>
-                  <p className="mt-8 max-w-[660px] text-[20px] leading-[1.75] text-[#6a7280]">
+                  <p className="copy-justified mt-8 max-w-[660px] text-[20px] leading-[1.75] text-[#6a7280]">
                     SettleRight is building an AI-powered platform to simplify relocation to the UAE.
                     From visas and medical tests to banking and housing, we bring every step of your
                     move into one seamless experience.
@@ -154,7 +185,7 @@ export default function Home() {
                       key={item.title}
                     >
                       <h3 className="text-[20px] font-bold text-[#071c31]">{item.title}</h3>
-                      <p className="mt-4 text-[18px] leading-relaxed text-[#6a7280]">
+                      <p className="copy-justified mt-4 text-[18px] leading-relaxed text-[#6a7280]">
                         {item.text}
                       </p>
                     </div>
@@ -170,7 +201,7 @@ export default function Home() {
             <h2 className="max-w-[760px] text-[38px] font-bold leading-[1.12] tracking-[-0.025em] text-[#071c31] md:text-[52px]">
               Built around the relocation moments that matter.
             </h2>
-            <div className="mt-12 grid gap-6 md:grid-cols-3">
+            <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
               {relocationItems.map((item) => (
                 <div
                   className="rounded-[22px] bg-white p-8 shadow-[0_2px_8px_rgba(7,28,49,0.12)] ring-1 ring-[#071c31]/5 md:p-10"
@@ -179,9 +210,68 @@ export default function Home() {
                   <h3 className="text-[27px] font-bold tracking-[-0.01em] text-[#071c31]">
                     {item.title}
                   </h3>
-                  <p className="mt-5 text-[19px] leading-relaxed text-[#53647d]">{item.text}</p>
+                  <p className="copy-justified mt-5 text-[19px] leading-relaxed text-[#53647d]">{item.text}</p>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-white px-7 py-20 md:px-20 md:py-28">
+          <div className="mx-auto max-w-[1440px]">
+            <div className="grid gap-12 lg:grid-cols-[0.72fr_1fr] lg:items-start">
+              <div>
+                <div className="inline-flex rounded-full bg-[#f6f8fb] px-6 py-3 text-[15px] font-bold text-[#071c31] shadow-sm ring-1 ring-[#071c31]/5">
+                  Traditional vs SettleRight
+                </div>
+                <h2 className="mt-10 max-w-[620px] text-[38px] font-bold leading-[1.12] tracking-[-0.025em] text-[#071c31] md:text-[52px]">
+                  The current process is fragmented. SettleRight makes it navigable.
+                </h2>
+                <p className="copy-justified mt-7 max-w-[600px] text-[20px] leading-[1.75] text-[#6a7280]">
+                  Relocation decisions usually happen through unclear advice, surprise costs, and
+                  disconnected providers. SettleRight turns those moving parts into a guided workflow
+                  you can understand and act on.
+                </p>
+              </div>
+
+              <div className="rounded-[28px] bg-[#f6f8fb] p-4 shadow-sm ring-1 ring-[#071c31]/6 md:p-6">
+                <div className="grid gap-4">
+                  <div className="hidden grid-cols-[0.7fr_1fr_1fr] gap-4 px-5 py-3 text-[13px] font-extrabold uppercase tracking-[0.16em] text-[#8a6400] md:grid">
+                    <span>Issue</span>
+                    <span>Traditional process</span>
+                    <span>SettleRight</span>
+                  </div>
+
+                  {workflowItems.map((item) => (
+                    <div
+                      className="grid gap-4 rounded-[22px] bg-white p-5 shadow-sm ring-1 ring-[#071c31]/8 md:grid-cols-[0.7fr_1fr_1fr] md:p-6"
+                      key={item.title}
+                    >
+                      <div>
+                        <p className="text-[20px] font-bold text-[#071c31]">{item.title}</p>
+                      </div>
+
+                      <div className="rounded-[18px] bg-[#fff7f7] p-4 ring-1 ring-[#eeb8b8]">
+                        <div className="mb-3 inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#f7dcdc] text-[18px] font-bold text-[#a53d3d]">
+                          ×
+                        </div>
+                        <p className="copy-justified text-[16px] leading-relaxed text-[#7a4b4b]">
+                          {item.traditional}
+                        </p>
+                      </div>
+
+                      <div className="rounded-[18px] bg-[#f3fbf6] p-4 ring-1 ring-[#bfe5ca]">
+                        <div className="mb-3 inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#dff4e6] text-[18px] font-bold text-[#1b7f42]">
+                          ✓
+                        </div>
+                        <p className="copy-justified text-[16px] leading-relaxed text-[#315f43]">
+                          {item.settleRight}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -192,7 +282,7 @@ export default function Home() {
               <h2 className="max-w-[700px] text-[38px] font-bold leading-[1.12] tracking-[-0.025em] text-white md:text-[58px]">
                 Be among the first to experience SettleRight.
               </h2>
-              <p className="max-w-[620px] text-[20px] leading-relaxed text-white/70 md:text-[22px]">
+              <p className="copy-justified max-w-[620px] text-[20px] leading-relaxed text-white/70 md:text-[22px]">
                 Join thousands of expats and founders planning their move to the UAE. Get early
                 access to our platform, exclusive insights, and step-by-step guidance.
               </p>

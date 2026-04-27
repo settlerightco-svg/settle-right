@@ -106,3 +106,10 @@ textarea {
   border: 1px solid rgba(7, 26, 47, 0.08);
   box-shadow: 0 4px 20px rgba(7, 26, 47, 0.08);
 }
+
+@media (min-width: 768px) {
+  .copy-justified {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+}
